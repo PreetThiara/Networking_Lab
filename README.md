@@ -1,28 +1,33 @@
+<h1>Basic Lan Setup Lab</h1>
 
-	 Add all the end devices: 3 pcs, 1 printer, 1 laptop 
-	 Add all the networking devices 1 switch, 1 router, 1 wireless router
-	 Physically connect the devices 
-	 Use a straight through cable to connect the pcs to switch, switch to router
-   Connect using fast ethernet 
-   Connect the printer to switch 
+<h2>Add all the Devices (3pcs, 1 printer and 1 laptop) </h2>
 
-	 Connect switch to router using straight through for router use gigabit
-	 Router ports are shutdown by default unlike switches
-	 Connect router to wireless switch (use crossover cable because they are like devices) use gigabit and internet 
+- Add all the networking devices 1 switch, 1 router, 1 wireless router
+- Physically connect the devices 
+- Use a straight through cable to connect the pcs to switch, switch to router
+- Connect using fast ethernet 
+- Connect the printer to switch 
+
+<h3> Connect switch to router using straight through for router use gigabit </h3>
+<p>Router ports are shutdown by default unlike switches
+Connect router to wireless switch (use crossover cable because they are like devices) use gigabit and internet 
+Think of the ip address scheme you will use for the network 
+We are going to have one network for wired devices and another for wireless devices. Place notes of the subnets you want to use </p>
 	 
-	 Think of the ip address scheme you will use for the network 
-	 We are going to have one network for wired devices and another for wireless devices  
-	 Place notes of the subnets you want to use 
-	 Click on router to configure -> go to cli 
-	 If asked if you want to enter the initial configuration dialog type in no
-	 First we are going to configure the default gateway 
-	 Type in en -> then: conf t
-	 Type in int gi0/0
-	 Assign the ip address to use as the default gateway followed by subnet mask 
-	 Sum it up type in the interface you want to configure then ip address for gateway followed by subnet mask 
-   Then type exit to exit out of the interface and begin on the next network
-	 To save the configurations type: do wr 
-![image](https://github.com/user-attachments/assets/b9d22b71-eee9-4079-97d2-11569e8da306)
+- Click on router to configure -> go to cli 
+- If asked if you want to enter the initial configuration dialog type in no
+- First we are going to configure the default gateway 
+- Type in en -> then: conf t
+- Type in int gi0/0
+- Assign the ip address to use as the default gateway followed by subnet mask 
+- Sum it up type in the interface you want to configure then ip address for gateway followed by subnet mask 
+- Then type exit to exit out of the interface and begin on the next network
+- To save the configurations type: do wr 
+
+<p>
+<img src="https://github.com/user-attachments/assets/b9d22b71-eee9-4079-97d2-11569e8da306"/>
+</p>
+
 
 Configure Wireless Router and Laptop
     Click on wireless router  -> go to gui -> wireless tab
